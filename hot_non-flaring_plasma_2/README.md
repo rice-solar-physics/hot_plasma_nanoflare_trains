@@ -4,18 +4,37 @@
 One potential outline for this paper, revised.
 
 1. Introduction
+ - Briefly discuss nanoflares, hot plasma
+ - Talk about heating frequency (main point in intro)
+ - Review (briefly) past studies of nanoflare trains, heating frequency versus steady heating
+ - Emission measure slope diagnostic: hot side and cool side
+ - Summarize main points
 2. Methodology
- - Numerical Model
- - Energy Budget
- - Heating Statistics
+ 1. Numerical Model
+  - Some comments about loop models
+  - EBTEL
+  - Two-fluid EBTEL, refer to Paper 1 for details
+ 2. Energy Budget
+  - Talk about heating function we will use (b.g. + triangular pulses)
+  - Justify time-averaged heating rate
+  - Sample calculation to show consistency with nanoflare energies
+ 3. Heating Statistics (maybe combine with 2.2?)
+  - Power-law versus uniform
+  - Discuss scaling between waiting time and event energy
+  - Use of many runs to accurately represent distribution, capture hot shoulder dynamics
 3. Results
- - Separate electron and ion heating
- - Single-fluid comparison
- - Full parameter space comparison
+ - Parameters used in all runs (pulse duration, total time, loop length, etc.)
+ - Emission measure distribution details
+ - Fitting details
+ - Sample MC EM curves
+ 1. Separate electron and ion heating
+ 2. Single-fluid comparison
+ 3. Full parameter space comparison
 4. Discussion
 5. Conclusions
 
 ## Figure List
+Possible list of figures.
 
 - Fig. 1: Parameter space Tikz figure
 - Fig. 2: Example temperature and density profiles for nanoflare trains
