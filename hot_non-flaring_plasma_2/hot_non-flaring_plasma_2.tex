@@ -67,7 +67,7 @@
 	%
 	\par Additionally, while it is often assumed that the electrons are the direct recipients of the prescribed heating function, the degree to which the ions or electrons are preferentially heated in the solar corona is unknown. Thus, it is possible that the ions are preferentially heated, for instance, through ion-cyclotron wave resonances \citep{markovskii_intermittent_2004}. Ion cyclotron waves are excited by plasma instabilities in the lower corona. These waves then propagate upwards through the coronal plasma and wave particle interactions can occur for those ions whose gyrofrequencies have a resonance with the ion-cyclotron wave. Additionally, there is also evidence for ion heating via reconnection, both in laboratory plasmas and in particle-in-cell simulations \citep{ono_ion_1996,yoo_bulk_2014,drake_onset_2014}. Thus, ion heating in the solar corona should not be discounted as a possibility.
 	%
-	\par In our first paper, \citet{barnes_inference_2016} \citepalias[hereafter]{barnes_inference_2016}, we studied the effect of pulse duration, flux limiting, and NEI on hot emission from single nanoflares. In this second paper in our series on hot emission in AR cores, we use an efficient two-fluid hydrodynamic model to explore the effect of electron and ion heating on nanoflare-heated loops. In particular, we look at how the hot emission is affected by heating preferentially one species or the other as well as how this hot emission can vary with heating frequency and the power-law index that determines the event energy distribution. Additionally, we consider how NEI may affect hot emission measure slopes in the cases of electron and ion heating as well as the single-fluid case.
+	\par In our first paper, \citet{barnes_inference_2016} \citepalias[hereafter]{barnes_inference_2016}, we studied the effect of pulse duration, flux limiting, and NEI on hot emission from single nanoflares. In this second paper in our series on hot emission in AR cores, we use an efficient two-fluid hydrodynamic model to explore the effect of repeated impulsive heating events of varying frequency. In particular, we look at how the hot emission is affected by heating preferentially the electrons or the ions with events drawn from a power-law distribution. Additionally, we consider the effect of scaling the inter-event waiting time to the event energy and  how NEI may affect hot emission measure slopes.
 	%
 	\par\autoref{sec:methods} discusses the numerical model we have used to conduct this study and the parameter space we have investigated. \autoref{sec:results} shows the resulting emission measure curves and slopes for the electron and ion heating cases as well as the equivalent single-fluid cases. In \autoref{sec:discussion}, we discuss the implications of two-fluid effects in the context of hot and cool emission measure slopes and the nanoflare heating model. Finally, \autoref{sec:conclusions} provides some concluding comments on our findings.
 	%%
@@ -100,7 +100,7 @@
 	\begin{figure}
 		\centering
 		\include{parameter_space_graphic}
-		\caption{Total Parameter space covered. $\Sigma$ indicates the species that is heated, where ``single'' indicates a single-fluid model. $\alpha$ is the power-law index and $\beta$ indicates the scaling in the relationship $Q\propto T_N^{\beta}$, where $\beta=0$ corresponds to the case where $t_N$ and the event energy are independent. Note that $(3~\alpha~\mathrm{values})\times(3~\beta~\mathrm{values})+\mathrm{uniform~heating}=$ 10 different types of heating functions. \hl{Adjust depending on what value of $\beta$ we use in the end.	}}
+		\caption{Total Parameter space covered. $\Sigma$ indicates the species that is heated, where ``single'' indicates a single-fluid model. $\alpha$ is the power-law index and $\beta$ indicates the scaling in the relationship $Q\propto T_N^{\beta}$, where $\beta=0$ corresponds to the case where $t_N$ and the event energy are independent. Note that $(3~\alpha~\mathrm{values})\times(2~\beta~\mathrm{values})+\mathrm{uniform~heating}=$ 7 different types of heating functions. \hl{Adjust depending on what value of $\beta$ we use in the end.	}}
 		\label{fig:parameter_space}
 	\end{figure}
 	%
@@ -116,7 +116,7 @@
 	\begin{figure}
 		\centering
 		\includegraphics[width=\columnwidth]{figures/heating_functions.pdf}
-		\caption{\textbf{Top}: uniform heating amplitudes for $t_N=1000$ s; \textbf{Middle:} uniform heating amplitudes for $t_N=5000$ s; \textbf{Bottom:} Heating amplitudes drawn from a power-law distribution with index $\alpha=-1.5$. The events shown in red have wait times that depend on the previous event energy while the events shown in blue have uniform wait times. The mean wait time in both cases is $\langle T_N\rangle=2000$ s.}
+		\caption{\textbf{Top}: uniform heating amplitudes for $t_N=1000$ s; \textbf{Middle:} uniform heating amplitudes for $t_N=5000$ s; \textbf{Bottom:} Heating amplitudes drawn from a power-law distribution with index $\alpha=-1.5$. The events shown in red have wait times that depend on the previous event energy while the events shown in blue have uniform wait times. The mean wait time in both cases is $\langle t_N\rangle=2000$ s.}
 		\label{fig:heating_funcs}
 	\end{figure}
 %
@@ -124,7 +124,7 @@
 	\begin{figure}
 		\centering
 		\includegraphics[width=\columnwidth]{figures/heating_event_distributions.pdf}
-		\caption{Power-law distributions of heating events for indices $\alpha=-1.5,-2.0,-2.5$ for a given heating frequency, $t_N=2500$ s. For each frequency, $t_N$, we compute $N_R$ runs such that the total number of events simulated for each $t_N$ is $N\times N_R\sim10^4$.}
+		\caption{Power-law distributions of heating events for indices $\alpha=-1.5,-2.0,-2.5$ for a given heating frequency, $t_N=5000$ s. For each frequency, $t_N$, we compute $N_R$ runs such that the total number of events simulated for each $t_N$ is $N\times N_R\sim10^4$.}
 		\label{fig:event_dist}
 	\end{figure}
 %

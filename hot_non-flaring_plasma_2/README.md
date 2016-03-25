@@ -5,9 +5,12 @@ One potential outline for this paper, revised.
 
 1. Introduction
 	- Briefly discuss nanoflares
-	- Elaborate on presence of __hot__ plasma
+	- EM/DEM used to study _cool_ side and add __many__ references
+	- Talk about presence of __hot__ plasma and heating frequency (main point in intro)
+		- Divide this into observation paragraph and modeling paragraph
 		- Schmelz and Asghari-Targi (2015)
-	- Talk about heating frequency (main point in intro)
+		- Warren et al. (2011,2012)
+		- Ugarte-Urra and Warren (2014)
 	- Review (briefly) past studies of nanoflare trains, heating frequency versus steady heating
 		- Nanoflare Trains and Nanoflare storms:
 			- Bradshaw et al. (2012)
@@ -15,7 +18,7 @@ One potential outline for this paper, revised.
 			- Cargill et al. (2014)
 				
 		- Steady Heating (briefly as counterpoint to above):
-			- Lundquist et al. (2008a,b)
+			- ~~Lundquist et al. (2008a,b)~~
 			- Winebarger et al. (2008)
 			- Winebarger et al. (2011a)
 	- Emission measure slope diagnostic: hot side and cool side
@@ -33,14 +36,17 @@ One potential outline for this paper, revised.
 		- Power-law versus uniform
 		- Discuss scaling between waiting time and event energy
 		- Use of many runs to accurately represent distribution, capture hot shoulder dynamics
+	4. Non-equilibrium Ionization
+		- Teff code
+		- Maybe don't need a whole paragraph for this? Refer back to Paper 1
 3. Results
 	- Parameters used in all runs (pulse duration, total time, loop length, etc.)
 	- Emission measure distribution details
 	- Fitting details
 	- Sample MC EM curves
-	1. Separate electron and ion heating
-	2. Single-fluid comparison
-	3. Full parameter space comparison
+	1. Separate electron and ion heating: EM plots, maybe grid
+	2. Full parameter space comparison using ratio or slope diagnostic
+	3. Discuss importance of NEI: scaled versus not
 4. Discussion
 5. Conclusions
 
@@ -60,7 +66,7 @@ So what is this paper trying to say?
 
 
 ## Figure List
-Possible list of figures.
+Possible list of figures. Get rid of stacked plots, use grid (?) instead; maybe only one derivative plot to show how hot slope may be misleading. Get rid of slope plots also; mean cool and hot slope printed on each plot in the grid
 
 - Fig. 1: Parameter space Tikz figure
 - Fig. 2: Example temperature and density profiles for nanoflare trains
@@ -70,15 +76,15 @@ Possible list of figures.
 - Fig. 4: Example EM distributions for N<sub>runs</sub> showing mean and standard deviation
 - Fig. 5, electron heating
  - a: EM distribution for all t<sub>N</sub> with fit lines
- - b: EM slopes for varying t<sub>N</sub>
+ - b: ~~EM slopes for varying t<sub>N</sub>~~
  - c: EM derivatives for all t<sub>N</sub>
 - Fig. 6, ion heating
  - a: EM distribution for all t<sub>N</sub> with fit lines
- - b: EM slopes for varying t<sub>N</sub>
+ - b: ~~EM slopes for varying t<sub>N</sub>~~
  - c: EM derivatives for all t<sub>N</sub>
-- Fig. 7, single fluid
+- ~~Fig. 7, single fluid~~
  - a: EM distribution for all t<sub>N</sub> with fit lines
- - b: EM slopes for varying t<sub>N</sub>
+ - b: ~~EM slopes for varying t<sub>N</sub>~~
  - c: EM derivatives for all t<sub>N</sub>
 - Fig. 8 Cool EM slope histograms
 - Fig. 9 Hot EM slope histograms
