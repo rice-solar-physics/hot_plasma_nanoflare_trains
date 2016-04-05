@@ -80,9 +80,6 @@ Culhane, J.~L., Harra, L.~K., James, A.~M., {et~al.} 2007, Solar Physics, 243,
 De~Pontieu, B., Title, A.~M., Lemen, J.~R., {et~al.} 2014, Solar Physics, 289,
   2733
 
-\bibitem[{Drake \& Swisdak(2014)}]{drake_onset_2014}
-Drake, J.~F., \& Swisdak, M. 2014, Physics of Plasmas, 21, 072903
-
 \bibitem[{Freedman \& Diaconis(1981)}]{freedman_histogram_1981}
 Freedman, D., \& Diaconis, P. 1981, Zeitschrift für Wahrscheinlichkeitstheorie
   und Verwandte Gebiete, 57, 453
@@ -123,14 +120,6 @@ Kosugi, T., Matsuzaki, K., Sakao, T., {et~al.} 2007, Solar Physics, 243, 3
 Krucker, S., Christe, S., Glesener, L., {et~al.} 2011, in Society of
   {Photo}-{Optical} {Instrumentation} {Engineers} ({SPIE}) {Conference}
   {Series}, Vol. 8147, 814705
-
-\bibitem[{Markovskii \& Hollweg(2004)}]{markovskii_intermittent_2004}
-Markovskii, S.~A., \& Hollweg, J.~V. 2004, The Astrophysical Journal, 609, 1112
-
-\bibitem[{Ono {et~al.}(1996)Ono, Yamada, Akao, Tajima, \&
-  Matsumoto}]{ono_ion_1996}
-Ono, Y., Yamada, M., Akao, T., Tajima, T., \& Matsumoto, R. 1996, Physical
-  Review Letters, 76, 3328
 
 \bibitem[{Parker(1988)}]{parker_nanoflares_1988}
 Parker, E.~N. 1988, The Astrophysical Journal, 330, 474
@@ -185,10 +174,5 @@ Winebarger, A.~R. 2014, AGU Fall Meeting Abstracts, 52, 03
   Mulu-Moore, Golub, \& Kobayashi}]{winebarger_defining_2012}
 Winebarger, A.~R., Warren, H.~P., Schmelz, J.~T., {et~al.} 2012, The
   Astrophysical Journal Letters, 746, L17
-
-\bibitem[{Yoo {et~al.}(2014)Yoo, Yamada, Ji, Jara-Almonte, \&
-  Myers}]{yoo_bulk_2014}
-Yoo, J., Yamada, M., Ji, H., Jara-Almonte, J., \& Myers, C.~E. 2014, Physics of
-  Plasmas (1994-present), 21, 055706
 
 \end{thebibliography}

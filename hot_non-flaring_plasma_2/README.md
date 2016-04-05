@@ -44,9 +44,9 @@ One potential outline for this paper, revised.
 	- Emission measure distribution details
 	- Fitting details
 	- Sample MC EM curves
-	1. Separate electron and ion heating: EM plots, maybe grid
-	2. Full parameter space comparison using ratio or slope diagnostic
-	3. Discuss importance of NEI: scaled versus not
+	1. Emission measure distributions
+	2. Pre-nanoflare densities and ion-electron collision times
+	3. Hot plasma diagnostics
 4. Discussion
 5. Conclusions
 
@@ -57,9 +57,7 @@ So what is this paper trying to say?
 	- Electrons: significant hot shoulder
 	- Ions: truncated hot shoulder, not much there; uniform heating very truncated, power-law not as much
 	- Both (single-fluid): hot shoulder, but different shape than electron heating
-- NEI important, but less so for $Q\propto t_N$
-	- Power-law: for low- to intermediate-frequency heating, always get low densities
-	- Power-law+scaling: only get low densities for large event energies; need high-energy + high-energy to get high temperatures at low densities
+- NEI important, but less so for ~~$Q\propto t_N$~~ power-law case
 - Heating signal potentially much stronger when we include a more realistic heating function for intermediate- to low-heating frequencies
 - Not enough to just consider single events; trains important
 - Something about the diagnostic we will use: EM ratio or hot slope?
@@ -69,25 +67,23 @@ So what is this paper trying to say?
 Possible list of figures. Get rid of stacked plots, use grid (?) instead; maybe only one derivative plot to show how hot slope may be misleading. Get rid of slope plots also; mean cool and hot slope printed on each plot in the grid
 
 - Fig. 1: Parameter space Tikz figure
-- Fig. 2: Example temperature and density profiles for nanoflare trains
-- Fig. 3
+- Fig. 2
  - a: Sample heating functions (Uniform+power-law)
- - b: Distribution of event energies (plot multiple alpha on top of each other)
-- Fig. 4: Example EM distributions for N<sub>runs</sub> showing mean and standard deviation
-- Fig. 5, electron heating
+ - b: ~~Distribution of event energies (plot multiple alpha on top of each other)~~
+- Fig. 3: For a given kind of heating function (i.e. alpha,beta) for a low-frequency case and a high frequency case for both ionization equilibrium and NEI. Electron heating.
+ - a. T(t) for all four curves
+ - b. n(t) for all four curves
+ - c. ~~EM(T) for all four curves~~
+- Fig. 4: same as Fig. 3, but for ion heating
+- ~~Fig. 5: same as Fig. 3, but for single-fluid case~~ 
+- Fig. 5: Electron heating; 2x3 grid of sampling of wait times for for 3-7 different heating functions for IEQ and NEI; minimum of 6, maximum of 14 curves per panel--choose only one alpha...
+- Fig. 6: same as Fig. 5 but for ion heating
+- ~~Fig. 7: same as Fig. 5, but for single-fluid case~~
  - a: EM distribution for all t<sub>N</sub> with fit lines
  - b: ~~EM slopes for varying t<sub>N</sub>~~
  - c: EM derivatives for all t<sub>N</sub>
-- Fig. 6, ion heating
- - a: EM distribution for all t<sub>N</sub> with fit lines
- - b: ~~EM slopes for varying t<sub>N</sub>~~
- - c: EM derivatives for all t<sub>N</sub>
-- ~~Fig. 7, single fluid~~
- - a: EM distribution for all t<sub>N</sub> with fit lines
- - b: ~~EM slopes for varying t<sub>N</sub>~~
- - c: EM derivatives for all t<sub>N</sub>
-- Fig. 8 Cool EM slope histograms
-- Fig. 9 Hot EM slope histograms
+- Fig. 8 ~~Cool EM slope histograms~~ EM Ratios here I guess...
+- Fig. 9 ~~Hot EM slope histograms~~
 
 ### Some Suggestions
 
