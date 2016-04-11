@@ -5,7 +5,11 @@ One potential outline for this paper, revised.
 
 1. Introduction
 	- Briefly discuss nanoflares
+	- Emission measure slope diagnostic: hot side and cool side--maybe don't mention emission measure slopes? Ratio test instead?
 	- EM/DEM used to study _cool_ side and add __many__ references
+		- Jordan (1980?)
+		- Winebarger (many)
+		- Bradshaw et al. (2012) and references therein, Reep et al. (2013)
 	- Talk about presence of __hot__ plasma and heating frequency (main point in intro)
 		- Divide this into observation paragraph and modeling paragraph
 		- Schmelz and Asghari-Targi (2015)
@@ -21,7 +25,6 @@ One potential outline for this paper, revised.
 			- ~~Lundquist et al. (2008a,b)~~
 			- Winebarger et al. (2008)
 			- Winebarger et al. (2011a)
-	- Emission measure slope diagnostic: hot side and cool side
 	- Summarize main points
 2. Methodology
 	1. Numerical Model
@@ -53,15 +56,10 @@ One potential outline for this paper, revised.
 ## Main Conclusions to Draw
 So what is this paper trying to say?
 
-- What species you choose to heat matters! the EM distribution __will change__
-	- Electrons: significant hot shoulder
-	- Ions: truncated hot shoulder, not much there; uniform heating very truncated, power-law not as much
-	- Both (single-fluid): hot shoulder, but different shape than electron heating
-- NEI important, but less so for ~~$Q\propto t_N$~~ power-law case
-- Heating signal potentially much stronger when we include a more realistic heating function for intermediate- to low-heating frequencies
-- Not enough to just consider single events; trains important
-- Something about the diagnostic we will use: EM ratio or hot slope?
-
+- Heating function type (i.e. alpha, beta) does not really impact the hot part of the emission measure (as compared to the cool part which it heavily influences, e.g. changing power-law slope distributions, show plot?)
+- When using a power-law, NEI is not much of a factor compared to uniform heating rates--explain why! with T,n profiles
+- Ions can have EM>10 MK in a nanoflare train scenario (unlike with single heating events)--differences most obvious in uniform heating case
+- Recommendations for detectability? EIS/MaGIXS line pairs? Brosius line pair?
 
 ## Figure List
 Possible list of figures. Get rid of stacked plots, use grid (?) instead; maybe only one derivative plot to show how hot slope may be misleading. Get rid of slope plots also; mean cool and hot slope printed on each plot in the grid
@@ -85,8 +83,3 @@ Possible list of figures. Get rid of stacked plots, use grid (?) instead; maybe 
 - Fig. 8 ~~Cool EM slope histograms~~ EM Ratios here I guess...
 - Fig. 9 ~~Hot EM slope histograms~~
 
-### Some Suggestions
-
-- Have one EM plot for a sample t<sub>N</sub> value for a variety of cases (e.g. heated species, power-law index); should be an intermediate value
-- Change from stacked EM plots to grid of EM plots for a particular power-law index, one for each species (?)
-- Histogram of density and event energy (plus example temperature and density profiles) to show how scaled heating function inhibits NEI
