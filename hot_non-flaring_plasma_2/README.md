@@ -60,6 +60,7 @@ So what is this paper trying to say?
 - When using a power-law, NEI is not much of a factor compared to uniform heating rates--explain why! with T,n profiles
 - Ions can have EM>10 MK in a nanoflare train scenario (unlike with single heating events)--differences most obvious in uniform heating case
 - Recommendations for detectability? EIS/MaGIXS line pairs? Brosius line pair?
+ - Figure that shows EM ratio better than power-law slope? Power-law very sensitive to temperature bounds.
 
 ## Figure List
 Possible list of figures. Get rid of stacked plots, use grid (?) instead; maybe only one derivative plot to show how hot slope may be misleading. Get rid of slope plots also; mean cool and hot slope printed on each plot in the grid
