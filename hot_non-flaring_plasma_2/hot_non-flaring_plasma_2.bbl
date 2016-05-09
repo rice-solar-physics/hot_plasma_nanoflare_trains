@@ -47,6 +47,9 @@ Cargill, P.~J., \& Klimchuk, J.~A. 2004, The Astrophysical Journal, 605, 911
 Cargill, P.~J., Warren, H.~P., \& Bradshaw, S.~J. 2015, Philosophical
   Transactions of the Royal Society of London Series A, 373, 20140260
 
+\bibitem[{Del~Zanna \& Mason(2014)}]{del_zanna_elemental_2014}
+Del~Zanna, G., \& Mason, H.~E. 2014, Astronomy and Astrophysics, 565, A14
+
 \bibitem[{Del~Zanna {et~al.}(2015)Del~Zanna, Tripathi, Mason, Subramanian, \&
   O'Dwyer}]{del_zanna_evolution_2015}
 Del~Zanna, G., Tripathi, D., Mason, H., Subramanian, S., \& O'Dwyer, B. 2015,
@@ -77,8 +80,31 @@ Krucker, S., Christe, S., Glesener, L., {et~al.} 2011, in Society of
   {Photo}-{Optical} {Instrumentation} {Engineers} ({SPIE}) {Conference}
   {Series}, Vol. 8147, 814705
 
+\bibitem[{Lemen {et~al.}(2012)Lemen, Title, Akin, Boerner, Chou, Drake, Duncan,
+  Edwards, Friedlaender, Heyman, Hurlburt, Katz, Kushner, Levay, Lindgren,
+  Mathur, McFeaters, Mitchell, Rehse, Schrijver, Springer, Stern, Tarbell,
+  Wuelser, Wolfson, Yanari, Bookbinder, Cheimets, Caldwell, Deluca, Gates,
+  Golub, Park, Podgorski, Bush, Scherrer, Gummin, Smith, Auker, Jerram, Pool,
+  Soufli, Windt, Beardsley, Clapp, Lang, \& Waltham}]{lemen_atmospheric_2012}
+Lemen, J.~R., Title, A.~M., Akin, D.~J., {et~al.} 2012, Solar Physics, 275, 17
+
+\bibitem[{Miceli {et~al.}(2012)Miceli, Reale, Gburek, Terzo, Barbera, Collura,
+  Sylwester, Kowalinski, Podgorski, \& Gryciuk}]{miceli_x-ray_2012}
+Miceli, M., Reale, F., Gburek, S., {et~al.} 2012, Astronomy and Astrophysics,
+  544, A139
+
 \bibitem[{Parker(1988)}]{parker_nanoflares_1988}
 Parker, E.~N. 1988, The Astrophysical Journal, 330, 474
+
+\bibitem[{Pesnell {et~al.}(2012)Pesnell, Thompson, \&
+  Chamberlin}]{pesnell_solar_2012}
+Pesnell, W.~D., Thompson, B.~J., \& Chamberlin, P.~C. 2012, Solar Physics, 275,
+  3
+
+\bibitem[{Petralia {et~al.}(2014)Petralia, Reale, Testa, \&
+  Del~Zanna}]{petralia_thermal_2014}
+Petralia, A., Reale, F., Testa, P., \& Del~Zanna, G. 2014, Astronomy and
+  Astrophysics, 564, A3
 
 \bibitem[{Pérez \& Granger(2007)}]{perez_ipython:_2007}
 Pérez, F., \& Granger, B.~E. 2007, Computing in Science \& Engineering, 9, 21
@@ -86,13 +112,36 @@ Pérez, F., \& Granger, B.~E. 2007, Computing in Science \& Engineering, 9, 21
 \bibitem[{Reale \& Orlando(2008)}]{reale_nonequilibrium_2008}
 Reale, F., \& Orlando, S. 2008, The Astrophysical Journal, 684, 715
 
+\bibitem[{Reale {et~al.}(2009)Reale, Testa, Klimchuk, \&
+  Parenti}]{reale_evidence_2009}
+Reale, F., Testa, P., Klimchuk, J.~A., \& Parenti, S. 2009, The Astrophysical
+  Journal, 698, 756
+
 \bibitem[{Reep {et~al.}(2013)Reep, Bradshaw, \&
   Klimchuk}]{reep_diagnosing_2013}
 Reep, J.~W., Bradshaw, S.~J., \& Klimchuk, J.~A. 2013, The Astrophysical
   Journal, 764, 193
 
+\bibitem[{Schmelz {et~al.}(2015)Schmelz, Asgari-Targhi, Christian, Dhaliwal, \&
+  Pathak}]{schmelz_hot_2015}
+Schmelz, J.~T., Asgari-Targhi, M., Christian, G.~M., Dhaliwal, R.~S., \&
+  Pathak, S. 2015, The Astrophysical Journal, 806, 232
+
 \bibitem[{Schmelz \& Pathak(2012)}]{schmelz_cold_2012}
 Schmelz, J.~T., \& Pathak, S. 2012, The Astrophysical Journal, 756, 126
+
+\bibitem[{Schmelz {et~al.}(2009)Schmelz, Saar, DeLuca, Golub, Kashyap, Weber,
+  \& Klimchuk}]{schmelz_hinode_2009}
+Schmelz, J.~T., Saar, S.~H., DeLuca, E.~E., {et~al.} 2009, The Astrophysical
+  Journal Letters, 693, L131
+
+\bibitem[{Testa \& Reale(2012)}]{testa_hinode/eis_2012}
+Testa, P., \& Reale, F. 2012, The Astrophysical Journal Letters, 750, L10
+
+\bibitem[{Testa {et~al.}(2011)Testa, Reale, Landi, DeLuca, \&
+  Kashyap}]{testa_temperature_2011}
+Testa, P., Reale, F., Landi, E., DeLuca, E.~E., \& Kashyap, V. 2011, The
+  Astrophysical Journal, 728, 30
 
 \bibitem[{Tripathi {et~al.}(2011)Tripathi, Klimchuk, \&
   Mason}]{tripathi_emission_2011}
@@ -121,5 +170,10 @@ Warren, H.~P., Winebarger, A.~R., \& Brooks, D.~H. 2012, The Astrophysical
   Kashyap}]{winebarger_using_2011}
 Winebarger, A.~R., Schmelz, J.~T., Warren, H.~P., Saar, S.~H., \& Kashyap,
   V.~L. 2011, The Astrophysical Journal, 740, 2
+
+\bibitem[{Winebarger {et~al.}(2012)Winebarger, Warren, Schmelz, Cirtain,
+  Mulu-Moore, Golub, \& Kobayashi}]{winebarger_defining_2012}
+Winebarger, A.~R., Warren, H.~P., Schmelz, J.~T., {et~al.} 2012, The
+  Astrophysical Journal Letters, 746, L17
 
 \end{thebibliography}
