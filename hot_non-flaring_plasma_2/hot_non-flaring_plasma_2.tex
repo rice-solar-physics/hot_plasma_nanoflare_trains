@@ -81,7 +81,9 @@
 		\frac{d}{dt}\bar{n} &= \frac{c_2(\gamma - 1)}{c_3\gamma Lk_B\bar{T}_e}\left(\psi_{TR} - F_{ce,0} - \mathcal{R}_{TR}\right),\label{eq:ebtel2fl_n}
 	\end{align}
 	%%
-	where $c_2=\bar{T}_e/T_{e,a}\approx0.9$, $c_3=T_{e,0}/T_{e,a}\approx0.6$, $\nu_{ei}$ is the electron-ion binary Coulomb collision frequency and $\psi_{TR}$ is a term included to maintain charge and current and neutrality. These equations are closed by the equations of state $p_e=k_BnT_e$ and $p_i=k_BnT_i$.
+	where $c_2=\bar{T}_e/T_{e,a}\approx0.9$, $c_3=T_{e,0}/T_{e,a}\approx0.6$, $\nu_{ei}$ is the electron-ion binary Coulomb collision frequency and $\psi_{TR}$ is a term included to maintain charge and current and neutrality. These equations are closed by the equations of state $p_e=k_BnT_e$ and $p_i=k_BnT_i$. In the cases where we treat the plasma as a single-fluid, we use the original EBTEL model as described in \citet{klimchuk_highly_2008,cargill_enthalpy-based_2012}.
+	%
+	\par The loop is heated by a prescribed heating function, applied to either the electrons ($\bar{Q}_e$) or the ions ($\bar{Q}_i$). Both species cool through a combination of thermal conduction ($F_{ce,0},\,F_{ci,0}$) and an enthalpy flux to the lower atmosphere, with the electrons also undergoing radiative cooling ($\mathcal{R_C}$). In the case of conductive cooling, a flux limiter, $F=(1/2)fnk_BTV_e$, is imposed to mitigate runaway cooling in a low-density, high-temperature plasma. In all cases we use a saturation limit of $f=1$. See \citetalias{barnes_inference_2016} for a discussion of how $f$ is likely to effect the presence of hot emission in a nanoflare-heated plasma.
 	%
 	\subsection{Energy Budget}
 	\label{subsec:params}
@@ -90,12 +92,12 @@
 	%
 	\begin{figure}
 		\centering
-		\include{parameter_space_graphic}
-		\caption{Total Parameter space covered. ``single'' indicates a single-fluid model. $\alpha$ is the power-law index and $\beta$ indicates the scaling in the relationship $Q\propto T_N^{\beta}$, where $\beta=0$ corresponds to the case where $t_N$ and the event energy are independent. Note that $(3~\alpha~\mathrm{values})\times(2~\beta~\mathrm{values})+\mathrm{uniform~heating}=$ 7 different types of heating functions. \hl{Are we going to look at the single-fluid case? If not, remove if here and reconsider total number of heating functions.}}
-		\label{fig:parameter_space}
+		\includegraphics[width=\columnwidth]{figures/heating_functions.pdf}
+		\caption{\textbf{Top}: uniform heating amplitudes for $t_N=1000$ s; \textbf{Middle:} uniform heating amplitudes for $t_N=5000$ s; \textbf{Bottom:} Heating amplitudes drawn from a power-law distribution with index $\alpha=-1.5$. The events shown in red have wait times that depend on the previous event energy while the events shown in blue have uniform wait times. The mean wait time in both cases is $\langle t_N\rangle=2000$ s.}
+		\label{fig:heating_funcs}
 	\end{figure}
-	%
-	\par Recent observations have suggested that loops in AR cores are maintained at an equilibrium temperature of $T_{peak}\approx4$ MK \citep{warren_constraints_2011,warren_systematic_2012}. Using our modified two-fluid EBTEL model, we have estimated the corresponding time-averaged volumetric heating rate for a loop of half-length $L=40$ Mm to be  $H_{eq}\sim4.5\times10^{-3}$. \hl{In the single-fluid EBTEL model, this value is slightly lower because losses due to electron-ion collisions are ignored.} Thus, to maintain an emission measure peaked about $T_{peak}$, for triangular pulses, the individual event heating rates are constrained by 
+%
+	\par Recent observations have suggested that loops in AR cores are maintained at an equilibrium temperature of $T_{peak}\approx4$ MK \citep{warren_constraints_2011,warren_systematic_2012}. Using our modified two-fluid EBTEL model, we have estimated the corresponding time-averaged volumetric heating rate for a loop of half-length $L=40$ Mm to be  $H_{eq}\sim3.6\times10^{-3}$. \hl{In the single-fluid EBTEL model, this value is slightly lower because losses due to electron-ion collisions are ignored.} Thus, to maintain an emission measure peaked about $T_{peak}$, for triangular pulses, the individual event heating rates are constrained by 
 	\begin{equation}
 		\label{eq:heating_rate_constraint}
 		H_{eq} = \frac{1}{t_{total}}\sum_{i=1}^N\int_{t_i}^{t_i+\tau}\mathrm{d}t~h_i(t) = \frac{\tau}{2t_{total}}\sum_{i=1}^NH_i,
@@ -106,11 +108,11 @@
 	%
 	\begin{figure}
 		\centering
-		\includegraphics[width=\columnwidth]{figures/heating_functions.pdf}
-		\caption{\textbf{Top}: uniform heating amplitudes for $t_N=1000$ s; \textbf{Middle:} uniform heating amplitudes for $t_N=5000$ s; \textbf{Bottom:} Heating amplitudes drawn from a power-law distribution with index $\alpha=-1.5$. The events shown in red have wait times that depend on the previous event energy while the events shown in blue have uniform wait times. The mean wait time in both cases is $\langle t_N\rangle=2000$ s.}
-		\label{fig:heating_funcs}
+		\include{parameter_space_graphic}
+		\caption{Total Parameter space covered. ``single'' indicates a single-fluid model. $\alpha$ is the power-law index and $\beta$ indicates the scaling in the relationship $Q\propto T_N^{\beta}$, where $\beta=0$ corresponds to the case where $t_N$ and the event energy are independent. Note that $(3~\alpha~\mathrm{values})\times(2~\beta~\mathrm{values})+\mathrm{uniform~heating}=$ 7 different types of heating functions. \hl{Are we going to look at the single-fluid case? If not, remove if here and reconsider total number of heating functions.}}
+		\label{fig:parameter_space}
 	\end{figure}
-%
+	%
 	\par According to the nanoflare heating model of \citet{parker_nanoflares_1988}, turbulent loop footpoint motions twist and stress the field, leading to a buildup and subsequent release of energy. Following \citet{cargill_active_2014}, we let $\varepsilon_i\propto t_{N,i}^{\beta}$, where $\varepsilon_i,t_{N,i}$ are the total energy and waiting time following event $i$, respectively, and $\beta=1$ such that the event energy scales linearly with the waiting time. The reasoning for such an expression is as follows. Bursty, nanoflare heating is thought to arise from the stressing and subsequent relaxation of the coronal field. If a sufficient amount of energy is released into the loop, the field will need enough time to ``unravel'' and ``wind up'' again before the next event such that the subsequent waiting time is large. Conversely, if only a small amount of energy is released, the field will require a shorter unwinding time, resulting in a shorter interval between the subsequent events. Thus, this scaling provides a way to incorporate a more physically motivated heating function into a hydrodynamic model which cannot self-consistently determine the heat input based on the evolving magnetic field. \autoref{fig:heating_funcs} shows the various heating functions used for several example $t_N$ values.
 	%
 	\subsection{Heating Statistics}
@@ -130,7 +132,7 @@
 	\section{Results}
 	\label{sec:results}
 	%
-	\par We now show the results of our loop simulations for each point in our multi-dimensional parameter space: species heated (electron or ion ), power-law index ($\alpha$), heating frequency ($t_N$), and waiting-time/event energy relationship ($\beta$). All results were processed using the IPython system for interactive scientific computing in Python \citep{perez_ipython:_2007} as well as the NumPy and Scipy numerical and scientific Python libraries \citep{van_der_walt_numpy_2011}. All results were visualized using the matplotlib graphics library \citep{hunter_matplotlib:_2007}.
+	\par We now show the results of our loop simulations for each point in our multi-dimensional parameter space: species heated (single-fluid, electron or ion), power-law index ($\alpha$), heating frequency ($t_N$), and waiting-time/event energy relationship ($\beta$). All results were processed using the IPython system for interactive scientific computing in Python \citep{perez_ipython:_2007} as well as the NumPy and Scipy numerical and scientific Python libraries \citep{van_der_walt_numpy_2011}. All results were visualized using the matplotlib graphics library \citep{hunter_matplotlib:_2007}.
 	%
 	\par In order to compactly summarize all of the data in each run of our model, we calculate the resulting emission measure distribution using the familiar expression $\mathrm{EM}=n^2(2L)$, where $L$ is the loop half-length. We consider a temperature range of $4.0\le\log{T}\le8.5$ with bin sizes of $\Delta\log{T}=0.01$. At each iteration $i$, the coronal temperature range $[T_0,T_a]$ is calculated from $\bar{T}_e$. For each bin that falls within $[T_0,T_a]$, $\bar{n}_i^2(2L)$ is added to that bin, where $\bar{n}_i$ is the spatially-averaged number density at time $t_i$. The emission measure in each bin is then averaged over the entire simulation period. When measured observationally, $\mathrm{EM}(T)$ is a line-of-sight quantity. Assuming an aspect ratio (i.e. ratio of loop length to loop width) of 10, we apply a correction factor 1/10 to all calculated $\mathrm{EM}$ curves. Furthermore, each emission measure distribution we also compute the corresponding effective emission measure distribution, $\mathrm{EM}(T_{eff})$, using $T_{eff}$, the effective temperature calculated by including effects due to NEI.
 	%
@@ -193,10 +195,10 @@
 	\begin{figure*}
 		\centering
 		\subfigure[]{%
-		\includegraphics[width=\columnwidth]{figures/ratio_hist_alpha_electron_T0.pdf}
+		\includegraphics[width=\columnwidth]{figures/ratio_hist_alpha_electron_T2.pdf}
 		}
 		\subfigure[]{%
-		\includegraphics[width=\columnwidth]{figures/ratio_hist_twait_electron_T0.pdf}
+		\includegraphics[width=\columnwidth]{figures/ratio_hist_twait_electron_T2.pdf}
 		}
 		\caption{Electron heating emission measure ratio for an EIS/MaGIXS line pair}
 	\end{figure*}
@@ -204,10 +206,10 @@
 	\begin{figure*}
 		\centering
 		\subfigure[]{%
-		\includegraphics[width=\columnwidth]{figures/ratio_hist_alpha_ion_T0.pdf}
+		\includegraphics[width=\columnwidth]{figures/ratio_hist_alpha_ion_T2.pdf}
 		}
 		\subfigure[]{%
-		\includegraphics[width=\columnwidth]{figures/ratio_hist_twait_ion_T0.pdf}
+		\includegraphics[width=\columnwidth]{figures/ratio_hist_twait_ion_T2.pdf}
 		}
 		\caption{Diagnostics figures}
 	\end{figure*}
