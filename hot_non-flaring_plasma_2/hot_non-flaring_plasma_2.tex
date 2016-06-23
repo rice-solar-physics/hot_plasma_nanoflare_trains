@@ -81,7 +81,9 @@
 		\frac{d}{dt}\bar{n} &= \frac{c_2(\gamma - 1)}{c_3\gamma Lk_B\bar{T}_e}\left(\psi_{TR} - F_{ce,0} - \mathcal{R}_{TR}\right),\label{eq:ebtel2fl_n}
 	\end{align}
 	%%
-	where $c_2=\bar{T}_e/T_{e,a}\approx0.9$, $c_3=T_{e,0}/T_{e,a}\approx0.6$, $\nu_{ei}$ is the electron-ion binary Coulomb collision frequency and $\psi_{TR}$ is a term included to maintain charge and current and neutrality. These equations are closed by the equations of state $p_e=k_BnT_e$ and $p_i=k_BnT_i$.
+	where $c_2=\bar{T}_e/T_{e,a}\approx0.9$, $c_3=T_{e,0}/T_{e,a}\approx0.6$, $\nu_{ei}$ is the electron-ion binary Coulomb collision frequency and $\psi_{TR}$ is a term included to maintain charge and current and neutrality. These equations are closed by the equations of state $p_e=k_BnT_e$ and $p_i=k_BnT_i$. In the cases where we treat the plasma as a single-fluid, we use the original EBTEL model as described in \citet{klimchuk_highly_2008,cargill_enthalpy-based_2012}.
+	%
+	\par The loop is heated by a prescribed heating function, applied to either the electrons ($\bar{Q}_e$) or the ions ($\bar{Q}_i$). Both species cool through a combination of thermal conduction ($F_{ce,0},\,F_{ci,0}$) and an enthalpy flux to the lower atmosphere, with the electrons also undergoing radiative cooling ($\mathcal{R_C}$). In the case of conductive cooling, a flux limiter, $F=(1/2)fnk_BTV_e$, is imposed to mitigate runaway cooling in a low-density, high-temperature plasma. In all cases we use a saturation limit of $f=1$. See \citetalias{barnes_inference_2016} for a discussion of how $f$ is likely to effect the presence of hot emission in a nanoflare-heated plasma.
 	%
 	\subsection{Energy Budget}
 	\label{subsec:params}
@@ -90,27 +92,27 @@
 	%
 	\begin{figure}
 		\centering
-		\include{parameter_space_graphic}
-		\caption{Total Parameter space covered. ``single'' indicates a single-fluid model. $\alpha$ is the power-law index and $\beta$ indicates the scaling in the relationship $Q\propto T_N^{\beta}$, where $\beta=0$ corresponds to the case where $t_N$ and the event energy are independent. Note that $(3~\alpha~\mathrm{values})\times(2~\beta~\mathrm{values})+\mathrm{uniform~heating}=$ 7 different types of heating functions. \hl{Are we going to look at the single-fluid case? If not, remove if here and reconsider total number of heating functions.}}
-		\label{fig:parameter_space}
-	\end{figure}
-	%
-	\par Recent observations have suggested that loops in AR cores are maintained at an equilibrium temperature of $T_{peak}\approx4$ MK \citep{warren_constraints_2011,warren_systematic_2012}. Using our modified two-fluid EBTEL model, we have estimated the corresponding time-averaged volumetric heating rate for a loop of half-length $L=40$ Mm to be  $H_{eq}\sim4.5\times10^{-3}$. \hl{In the single-fluid EBTEL model, this value is slightly lower because losses due to electron-ion collisions are ignored.} Thus, to maintain an emission measure peaked about $T_{peak}$, for triangular pulses, the individual event heating rates are constrained by 
-	\begin{equation}
-		\label{eq:heating_rate_constraint}
-		H_{eq} = \frac{1}{t_{total}}\sum_{i=1}^N\int_{t_i}^{t_i+\tau}\mathrm{d}t~h_i(t) = \frac{\tau}{2t_{total}}\sum_{i=1}^NH_i,
-	\end{equation}
-	where $t_{total}$ is the total simulation time. Note that if $H_i=H_0$ for all $i$, the uniform heating rate $H_0=2t_{total}H_{eq}/N\tau$. Thus, for $L=40$ Mm, $A=10^{14}$ cm$^2$, the total amount of energy injected into the loop by one heating event for a loop heated by $N=20$ nanoflares in $t_{tot}=8\times10^4$ s is $\varepsilon=LAt_{total}H_{eq}/N\approx7.2\times10^{24}$ erg, consistent with the energy budget of the Parker nanoflare model. 
-	%
-	\par Determining the heating frequency in AR cores will help to place constraints on the source(s) of heat in the corona. We define the heating frequency in terms of the waiting time, $t_N$, between successive heating events. Following \citet{cargill_active_2014}, the range of waiting times is $250\le t_N\le5000$ s in increments of 250 s, for a total of 20 different possible heating frequencies. Additionally, $t_N$ can be written as $t_N=(t_{total}-N\tau)/N$, where we fix $T=8\times10^4$ s and $\tau=200$ s. Note that because $t_{total}$ and $\tau$ are fixed, as $t_N$ increases, $N$ decreases. Correspondingly, $\varepsilon_i$, the energy injected per event, increases according to \autoref{eq:heating_rate_constraint} such that the total energy injected per run is constant, regardless of $t_N$.
-	%
-	\begin{figure}
-		\centering
 		\includegraphics[width=\columnwidth]{figures/heating_functions.pdf}
 		\caption{\textbf{Top}: uniform heating amplitudes for $t_N=1000$ s; \textbf{Middle:} uniform heating amplitudes for $t_N=5000$ s; \textbf{Bottom:} Heating amplitudes drawn from a power-law distribution with index $\alpha=-1.5$. The events shown in red have wait times that depend on the previous event energy while the events shown in blue have uniform wait times. The mean wait time in both cases is $\langle t_N\rangle=2000$ s.}
 		\label{fig:heating_funcs}
 	\end{figure}
 %
+	\par Recent observations have suggested that loops in AR cores are maintained at an equilibrium temperature of $T_{peak}\approx4$ MK \citep{warren_constraints_2011,warren_systematic_2012}. Using our modified two-fluid EBTEL model, we have estimated the corresponding time-averaged volumetric heating rate for a loop of half-length $L=40$ Mm to be  $H_{eq}\sim3.6\times10^{-3}$. \hl{In the single-fluid EBTEL model, this value is slightly lower because losses due to electron-ion collisions are ignored.} Thus, to maintain an emission measure peaked about $T_{peak}$, for triangular pulses, the individual event heating rates are constrained by 
+	\begin{equation}
+		\label{eq:heating_rate_constraint}
+		H_{eq} = \frac{1}{t_{total}}\sum_{i=1}^N\int_{t_i}^{t_i+\tau}\mathrm{d}t~Q(t) = \frac{\tau}{2t_{total}}\sum_{i=1}^NH_i,
+	\end{equation}
+	where $t_{total}$ is the total simulation time. Note that if $H_i=H_0$ for all $i$, the heating rate for each event is $H_i=H_0=2t_{total}H_{eq}/N\tau$. Thus, for $L=40$ Mm, $A=10^{14}$ cm$^2$, the average energy per event for a loop heated by $N=20$ nanoflares in $t_{total}=8\times10^4$ s is $\varepsilon=LAt_{total}H_{eq}/N\approx5.8\times10^{24}$ erg, consistent with the energy budget of the Parker nanoflare model. 
+	%
+	\par We define the heating frequency in terms of the waiting time, $t_N$, between successive heating events. Following \citet{cargill_active_2014}, the range of waiting times is $250\le t_N\le5000$ s in increments of 250 s, for a total of 20 different possible heating frequencies. Additionally, $t_N$ can be written as $t_N=(t_{total}-N\tau)/N$, where we fix $t_{total}=8\times10^4$ s and $\tau=200$ s. Note that because $t_{total}$ and $\tau$ are fixed, as $t_N$ increases, $N$ decreases. Correspondingly, $\varepsilon_i=LA\tau H_i/2$, the energy injected per event, increases according to \autoref{eq:heating_rate_constraint} such that the total energy injected per run is constant, independent of $t_N$.
+	%
+	\begin{figure}
+		\centering
+		\include{parameter_space_graphic}
+		\caption{Total Parameter space covered. ``single'' indicates a single-fluid model. $\alpha$ is the power-law index and $\beta$ indicates the scaling in the relationship $Q\propto T_N^{\beta}$, where $\beta=0$ corresponds to the case where $t_N$ and the event energy are independent. Note that $(3~\alpha~\mathrm{values})\times(2~\beta~\mathrm{values})+\mathrm{uniform~heating}=$ 7 different types of heating functions. \hl{Are we going to look at the single-fluid case? If not, remove if here and reconsider total number of heating functions.}}
+		\label{fig:parameter_space}
+	\end{figure}
+	%
 	\par According to the nanoflare heating model of \citet{parker_nanoflares_1988}, turbulent loop footpoint motions twist and stress the field, leading to a buildup and subsequent release of energy. Following \citet{cargill_active_2014}, we let $\varepsilon_i\propto t_{N,i}^{\beta}$, where $\varepsilon_i,t_{N,i}$ are the total energy and waiting time following event $i$, respectively, and $\beta=1$ such that the event energy scales linearly with the waiting time. The reasoning for such an expression is as follows. Bursty, nanoflare heating is thought to arise from the stressing and subsequent relaxation of the coronal field. If a sufficient amount of energy is released into the loop, the field will need enough time to ``unravel'' and ``wind up'' again before the next event such that the subsequent waiting time is large. Conversely, if only a small amount of energy is released, the field will require a shorter unwinding time, resulting in a shorter interval between the subsequent events. Thus, this scaling provides a way to incorporate a more physically motivated heating function into a hydrodynamic model which cannot self-consistently determine the heat input based on the evolving magnetic field. \autoref{fig:heating_funcs} shows the various heating functions used for several example $t_N$ values.
 	%
 	\subsection{Heating Statistics}
@@ -130,46 +132,44 @@
 	\section{Results}
 	\label{sec:results}
 	%
-	\par We now show the results of our loop simulations for each point in our multi-dimensional parameter space: species heated (electron or ion ), power-law index ($\alpha$), heating frequency ($t_N$), and waiting-time/event energy relationship ($\beta$). All results were processed using the IPython system for interactive scientific computing in Python \citep{perez_ipython:_2007} as well as the NumPy and Scipy numerical and scientific Python libraries \citep{van_der_walt_numpy_2011}. All results were visualized using the matplotlib graphics library \citep{hunter_matplotlib:_2007}.
-	%
-	\par In order to compactly summarize all of the data in each run of our model, we calculate the resulting emission measure distribution using the familiar expression $\mathrm{EM}=n^2(2L)$, where $L$ is the loop half-length. We consider a temperature range of $4.0\le\log{T}\le8.5$ with bin sizes of $\Delta\log{T}=0.01$. At each iteration $i$, the coronal temperature range $[T_0,T_a]$ is calculated from $\bar{T}_e$. For each bin that falls within $[T_0,T_a]$, $\bar{n}_i^2(2L)$ is added to that bin, where $\bar{n}_i$ is the spatially-averaged number density at time $t_i$. The emission measure in each bin is then averaged over the entire simulation period. When measured observationally, $\mathrm{EM}(T)$ is a line-of-sight quantity. Assuming an aspect ratio (i.e. ratio of loop length to loop width) of 10, we apply a correction factor 1/10 to all calculated $\mathrm{EM}$ curves. Furthermore, each emission measure distribution we also compute the corresponding effective emission measure distribution, $\mathrm{EM}(T_{eff})$, using $T_{eff}$, the effective temperature calculated by including effects due to NEI.
-	%
-	\par As noted in \autoref{subsec:heating_stats}, for each heating frequency $t_N$, we compute $N_R$ runs such that there are $N_R$ $\mathrm{EM}(T)$ distributions for each $t_N$. Thus, the $\mathrm{EM}(T)$ that we show for each $t_N$ is the average computed over all $N_R$ of these emission measure distributions. 
-	%\par To characterize the emission measure, we compute the slopes on both the cool and hot sides of the peak. To be consistent with past observational and computational studies of cool emission \citep[see][and references therein]{bradshaw_diagnosing_2012}, we fit the cool slope on the interval $6.0\le\log{T}\le6.6$. Contrastingly, past studies of hot emission are less abundant; thus, the ``hot'' region where the $\mathrm{EM}$ is thought to follow a power-law is far less constrained. In order to best describe the steepness of the emission measure hotward of the peak, we choose to fit $\mathrm{EM}$ between the temperatures at which the emission measure is $99\%$ and $92\%$ of the peak value. We have no physical reason for choosing these particular bounds, but note that on this interval, the mean hotward emission is reasonably well-described by a power-law relationship. Fitting too close to the wide peak leads to misleadingly shallow slopes while fitting too close to the steep drop near $\log{T}\sim7.5$ results in steep slopes not particularly representative of the hotward emission. We perform the fit using the Levenberg-Marquardt algorithm for least-squares curve fitting as implemented in the SciPy scientific Python package \citep{van_der_walt_numpy_2011}.
-	%
+	\par We now show the results of our loop simulations for each point in our multi-dimensional parameter space: species heated (single-fluid, electron or ion), power-law index ($\alpha$), heating frequency ($t_N$), and waiting-time/event energy relationship ($\beta$). In each 0D hydrodynamic simulation, a loop of half-length $L=40$ Mm is heated by $N$ triangular events of duration $\tau=200$ s and peak heating rate $H_i$ for a duration of $t_{total}=8\times10^4$ s. The average interval between subsequent events is $t_N$ (in the uniform and power-law case, $t_N,i=t_N$ exactly for all $i$). We focus primarily on the emission measure distribution, $\mathrm{EM}(T)$, and observables typically calculated from $\mathrm{EM}(T)$. In all cases, the coronal emission measure is calculated according to the method outlined in section 3 of \citetalias{barnes_inference_2016}. The corresponding NEI results, $\mathrm{EM}(T_{eff})$, are calculated similarly, but using $T_{eff}$ (see \autoref{subsec:nei}) instead of $T$. All results were processed using the IPython system for interactive scientific computing in Python \citep{perez_ipython:_2007} as well as the NumPy and Scipy numerical and scientific Python libraries \citep{van_der_walt_numpy_2011}. All results were visualized using the matplotlib graphics library \citep{hunter_matplotlib:_2007}.
+	%%
 	\subsection{Emission Measure Distributions}
 	\label{subsec:em_dist}
 	%
 	\begin{figure*}[t]
 		\centering
-		\includegraphics[width=2\columnwidth]{figures/em_grid_electron_a25.pdf}
-		\caption{Emission measure distributions for varying waiting-times, $t_N$ in the case where only the electrons are heated. The three types of heating functions shown are uniform heating rates (red), heating rates chosen from a power-law distribution of $\alpha=-2.5$ (blue), and heating rates chosen from a power-law distribution of $\alpha=-2.5$ where the time between successive events is proportional to the heating rate of the preceding event (green). The dotted lines denote the corresponding $\mathrm{EM}(T_{eff})$ distribution.}
-		\label{fig:el_em}
+		\includegraphics[width=2\columnwidth]{figures/em_grid_single_a25.pdf}
+		\caption{Emission measure distributions for waiting-times $t_N=250,750,1500,2500,3750,5000$ s in the single-fluid case. The three types of heating functions shown are uniform heating rates (red), heating rates chosen from a power-law distribution of $\alpha=-2.5$ (blue), and heating rates chosen from a power-law distribution of $\alpha=-2.5$ where the time between successive events is proportional to the heating rate of the preceding event (green). The dotted lines denote the corresponding $\mathrm{EM}(T_{eff})$ distribution.}
+		\label{fig:single_em}
 	\end{figure*}
 	%
-	\par First, we look at the resulting emission measure distributions for the case in which only the electrons are heated. \autoref{fig:el_em} shows $\mathrm{EM}(T)$ for six different values of $t_N$ and three different types of heating functions: uniform heating events, events chosen from a power-law distribution of index $\alpha=-2.5$, and events chosen from a power-law distribution of index $\alpha=-2.5$ where the time between successive events depends on the heating rate of the preceding event. The dotted lines in each frame show the corresponding emission measure distribution constructed from $T_{eff}$, $\mathrm{EM}(T_{eff})$.
-	%
-	\par As $t_N$ increases, $\mathrm{EM}$ is allowed to extend to both lower and 
+	\begin{figure*}[t]
+		\centering
+		\includegraphics[width=2\columnwidth]{figures/em_grid_electron_a25.pdf}
+		\caption{Same as \autoref{fig:single_em}, but for the case where only the electrons are heated.}
+		\label{fig:el_em}
+	\end{figure*}
 	%
 	\begin{figure*}
 		\centering
 		\includegraphics[width=2\columnwidth]{figures/em_grid_ion_a25.pdf}
-		\caption{Same as \autoref{fig:el_em}, but for the case where only the ions are heated.}
+		\caption{Same as \autoref{fig:single_em}, but for the case where only the ions are heated.}
 		\label{fig:ion_em}
 	\end{figure*}
 	%
-	\par \autoref{fig:el_em} and \autoref{fig:ion_em} show the results of our emission measure study for the two distinct cases where only the electrons are heated and only the ions are heated with $\alpha=-2.5,\beta=1$ for a loop half-length of $40$ Mm, consistent with \citetalias{barnes_inference_2016}. The panels on the left show the mean $\mathrm{EM}$ for all $t_N$, where the average is taken over all $N_{R}$ runs. There is an artifical spacing of $\Delta\log{\mathrm{EM}}=0.2$ between each curve so that they can be easily distinguished from each other. The blue (red) lines indicate the cool (hot) power-law fits, where the slopes of the lines are the averages taken over all $N_{R}$ runs. We note that the $\mathrm{EM}$, for all $t_N$, peaks at approximately 4 MK ($10^{6.6}$ K), consistent with the constraints laid out in \autoref{subsec:params}. The top right panels show these average slope values as a function of $t_N$. The error bars indicate one standard deviation as calculated from the distribution of all $N_{R}$ runs.
+	\par In our first set of results, we compare $\mathrm{EM}(T)$ for three different types of heating functions, across six different heating frequencies. \autoref{fig:single_em}, \autoref{fig:el_em}, and \autoref{fig:ion_em} show the emission measure distributions in the single-fluid case, electron heating case, and ion heating case, respectively. Each panel in each figure corresponds to a different waiting time ($t_N$) and includes three different types of heating functions: uniform heating events (red), events chosen from a power-law distribution of index $\alpha=-2.5$ (blue), and events chosen from a power-law distribution of index $\alpha=-2.5$ where the time between successive events depends on the heating rate of the preceding event (green). Furthermore, the dashed lines denote the corresponding NEI cases, $\mathrm{EM}(T_{eff})$.
 	%
-	\par Lastly, the bottom right panels show the first derivative as a function of temperature, $d\log{\mathrm{EM}}/d\log{T}$, computed using central differences. The color scheme and line styles correspond to the emission mesure curves in the left panel. As in \citetalias{barnes_inference_2016}, we compute the derivative in an effort to better assess at what temperatures the emission measure is not well described by a power-law.
+	\par Recall from \autoref{subsec:heating_stats} that for those heating functions which choose peak heating rates from a power-law distribution, for each $t_N$, we run the model $N_R\sim(t_N+200)/8$ times. Thus, for each point in our parameter space, we produce $N_R$ $\mathrm{EM}(T)$ curves. In order to present our results compactly, the panels of \autoref{fig:single_em}, \autoref{fig:el_em}, and \autoref{fig:ion_em} each show the average over all $N_R$ curves. In this way, we account for the variations that may occur because of a lack/excess of strong heating events due to limited sampling from the distribution.
 	%
-	\par We first briefly consider the calculated cool emission measure slopes. Looking at the top right panels of \autoref{fig:el_em} and \autoref{fig:ion_em}, we note that in the cases of electron and ion heating, the cool emission measure slopes are consistent with both observational and modeling studies of cool emission in AR cores, having values that fall within the range $2\le a\le5$ \citep[and references therein]{bradshaw_diagnosing_2012}. Furthermore, the cool slopes computed using our new modified EBTEL model, with a heating function of the form $Q\propto T_N^{\beta}$, are consistent with those values reported in \citet{cargill_active_2014} and show a dependence on the waiting time $t_N$.  
+	\par We look first at the $\mathrm{EM}(T)$ for the single-fluid case, \autoref{fig:single_em}. Looking at all six panels, we note that as $t_N$ increases, $\mathrm{EM}(T)$ widens towards both cooler and hotter temperatures. $\mathrm{EM}(T)$ extends toward cooler temperatures because as $t_N$ increases and there is more time between successive heating events, the loop is allowed more time to cool both by radiation and enthalpy flux. $\mathrm{EM}(T)$ extends towards hotter temperatures for similar, but more subtle reasons. As $t_N\to0$, we approach the steady heating case in which conductive and radiative cooling exactly balance the heating. As $t_N$ increases and becomes comparable to and greater than a cooling time, the loop beceomes increasingly tenuous at the time of the subsequent heating event, allowing the loop to reach much hotter temperatures as radiative cooling is very inefficient at low densities. In this way, $\mathrm{EM}(T)$ can ``see'' this greater range of temperatures, both hot and cool, provided it is allowed to undergo a typical heating and cooling cycle. The more curtailed this cycle is by continued reheatings, the more narrow $\mathrm{EM}(T)$ will be.
 	%
-	\par Additionally, looking at the bottom right panels of \autoref{fig:el_em} and \autoref{fig:ion_em}, we see that, within the range $6.0\le\log{T}\le6.6$, the $\mathrm{EM}$ is reasonably well-described by a power-law, where $2\lesssim d\log{\mathrm{EM}/d\log{T}}\lesssim3$. Comparing the cases of electron and ion heating for both the cool slopes and $d\log{\mathrm{EM}/d\log{T}}$ on $6.0\le\log{T}\le6.6$, there are no substantial differences for all values of $t_N$ considered.
+	\par\hl{Describe differences between different heating function types} Looking at the different curves in each panel of \autoref{fig:single_em}, it is important to note that, although all widen as $t_N$, the way each extends higher and lower temperatures is very different. 
 	%
-	\par This is not the case for the hot emission measure. Looking first at the case of electron heating in \autoref{fig:el_em}, we note that there is a pronounced ``hot shoulder'' in the emission measure (left panel) just above $10^7$ K for $T_N\gtrsim2000$ s. This feature is even more evident when looking at the derivative of $\mathrm{EM}$ in the bottom right panel of \autoref{fig:el_em}. The peak between $10^7$ and $10^{7.5}$ K shows how the $\mathrm{EM}$ flattens out around $10^7$ K, indicating an enhanced hot emission measure. Considering the large range of values of $d\log{\mathrm{EM}}/d\log{T}$ on the interval over which the fit was performed, we acknowledge that a single power-law fit is not a good description of the hot emission measure in the case of electron heating.
+	\par\hl{Address electron and ion cases and how they differ from the single-fluid case in the ways discussed above.}
 	%
-	\par Contrastingly, we have not calculated the hot emission measure slopes for the case of ion heating. Looking at the left panel of \autoref{fig:ion_em}, for $T_N\gtrsim1000$ s, the $\mathrm{EM}$ peak is wide with a sharp cutoff just above $10^7$ K. There is no substantial emission measure component above $10^7$ K and, consequently, no hot shoulder as in the electron heating case. Applying the fitting procedure outlined above to the hot emission in the case of ion heating yields meaningful results for only a few short $t_N$. Thus, as in the case of electron heating, the resulting hot emission measure from ion heating is also not well described by a power-law. The lower right panel of \autoref{fig:ion_em} further highlights this by showing that around $10^7$ K, $d\log{\mathrm{EM}}/d\log{T}\to-\infty$.
-	%
+	\par\hl{Describe differences between IEQ and NEI solutions.}
+	%%%%%%%%%%%%%
 	\subsection{Pre-nanoflare Density}
 	\label{subsec:pre_nanoflare_density}
 	%
@@ -178,6 +178,8 @@
 		\includegraphics[width=2\columnwidth]{figures/nT_sample_curves_tn1500_electron.pdf}
 		\caption{Example temperature and density profiles for an intermediate heating frequency, $t_N=1500$ s for several different heating function types.}
 	\end{figure*}
+	%
+	\par\hl{Mostly discussing differences between power-law and uniform on hot side and scaling/non-scaling on the cool side. Lead into this paragraph from the previous paragraph}
 	%
 	\par \autoref{fig:single_em} shows the same results as \autoref{fig:el_em} and \autoref{fig:ion_em}, but for the single-fluid case in which electron-ion equilibrium is assumed at all times. To compute these $\mathrm{EM}$ curves, we have used the original, single-fluid EBTEL model as described in \citet{klimchuk_highly_2008} and \citet{cargill_enthalpy-based_2012}. The equivalent parameter space that was investigated with the modified two-fluid EBTEL model is explored with the single-fluid EBTEL code as well.
 	%
@@ -190,13 +192,30 @@
 	\subsection{Hot Plasma Diagnostics}
 	\label{subsec:diagnostics}
 	%%
+	%\par To characterize the emission measure, we compute the slopes on both the cool and hot sides of the peak. To be consistent with past observational and computational studies of cool emission \citep[see][and references therein]{bradshaw_diagnosing_2012}, we fit the cool slope on the interval $6.0\le\log{T}\le6.6$. Contrastingly, past studies of hot emission are less abundant; thus, the ``hot'' region where the $\mathrm{EM}$ is thought to follow a power-law is far less constrained. In order to best describe the steepness of the emission measure hotward of the peak, we choose to fit $\mathrm{EM}$ between the temperatures at which the emission measure is $99\%$ and $92\%$ of the peak value. We have no physical reason for choosing these particular bounds, but note that on this interval, the mean hotward emission is reasonably well-described by a power-law relationship. Fitting too close to the wide peak leads to misleadingly shallow slopes while fitting too close to the steep drop near $\log{T}\sim7.5$ results in steep slopes not particularly representative of the hotward emission. We perform the fit using the Levenberg-Marquardt algorithm for least-squares curve fitting as implemented in the SciPy scientific Python package \citep{van_der_walt_numpy_2011}.
+	%
+	\par We first briefly consider the calculated cool emission measure slopes. Looking at the top right panels of \autoref{fig:el_em} and \autoref{fig:ion_em}, we note that in the cases of electron and ion heating, the cool emission measure slopes are consistent with both observational and modeling studies of cool emission in AR cores, having values that fall within the range $2\le a\le5$ \citep[and references therein]{bradshaw_diagnosing_2012}. Furthermore, the cool slopes computed using our new modified EBTEL model, with a heating function of the form $Q\propto T_N^{\beta}$, are consistent with those values reported in \citet{cargill_active_2014} and show a dependence on the waiting time $t_N$.  
+	%
+	\par Additionally, looking at the bottom right panels of \autoref{fig:el_em} and \autoref{fig:ion_em}, we see that, within the range $6.0\le\log{T}\le6.6$, the $\mathrm{EM}$ is reasonably well-described by a power-law, where $2\lesssim d\log{\mathrm{EM}/d\log{T}}\lesssim3$. Comparing the cases of electron and ion heating for both the cool slopes and $d\log{\mathrm{EM}/d\log{T}}$ on $6.0\le\log{T}\le6.6$, there are no substantial differences for all values of $t_N$ considered.
+	%
+	\par This is not the case for the hot emission measure. Looking first at the case of electron heating in \autoref{fig:el_em}, we note that there is a pronounced ``hot shoulder'' in the emission measure (left panel) just above $10^7$ K for $T_N\gtrsim2000$ s. This feature is even more evident when looking at the derivative of $\mathrm{EM}$ in the bottom right panel of \autoref{fig:el_em}. The peak between $10^7$ and $10^{7.5}$ K shows how the $\mathrm{EM}$ flattens out around $10^7$ K, indicating an enhanced hot emission measure. Considering the large range of values of $d\log{\mathrm{EM}}/d\log{T}$ on the interval over which the fit was performed, we acknowledge that a single power-law fit is not a good description of the hot emission measure in the case of electron heating.
+	%
+	\par Contrastingly, we have not calculated the hot emission measure slopes for the case of ion heating. Looking at the left panel of \autoref{fig:ion_em}, for $T_N\gtrsim1000$ s, the $\mathrm{EM}$ peak is wide with a sharp cutoff just above $10^7$ K. There is no substantial emission measure component above $10^7$ K and, consequently, no hot shoulder as in the electron heating case. Applying the fitting procedure outlined above to the hot emission in the case of ion heating yields meaningful results for only a few short $t_N$. Thus, as in the case of electron heating, the resulting hot emission measure from ion heating is also not well described by a power-law. The lower right panel of \autoref{fig:ion_em} further highlights this by showing that around $10^7$ K, $d\log{\mathrm{EM}}/d\log{T}\to-\infty$.
+	%
+	%
+	\begin{figure*}
+		\centering
+		\includegraphics[width=2\columnwidth]{figures/em_slope_varying_bounds.pdf}
+		\caption{\textbf{Left:} EM slope as a function of upper bound on fit interval for both the hot (red) and cool (blue) side of $EM(T)$. \textbf{Right:} Emission measure distribution with overlaid hot and cool fit lines for varying fit intervals.}
+	\end{figure*}
+	%%
 	\begin{figure*}
 		\centering
 		\subfigure[]{%
-		\includegraphics[width=\columnwidth]{figures/ratio_hist_alpha_electron_T0.pdf}
+		\includegraphics[width=\columnwidth]{figures/ratio_hist_alpha_electron_T2.pdf}
 		}
 		\subfigure[]{%
-		\includegraphics[width=\columnwidth]{figures/ratio_hist_twait_electron_T0.pdf}
+		\includegraphics[width=\columnwidth]{figures/ratio_hist_twait_electron_T2.pdf}
 		}
 		\caption{Electron heating emission measure ratio for an EIS/MaGIXS line pair}
 	\end{figure*}
@@ -204,10 +223,10 @@
 	\begin{figure*}
 		\centering
 		\subfigure[]{%
-		\includegraphics[width=\columnwidth]{figures/ratio_hist_alpha_ion_T0.pdf}
+		\includegraphics[width=\columnwidth]{figures/ratio_hist_alpha_ion_T2.pdf}
 		}
 		\subfigure[]{%
-		\includegraphics[width=\columnwidth]{figures/ratio_hist_twait_ion_T0.pdf}
+		\includegraphics[width=\columnwidth]{figures/ratio_hist_twait_ion_T2.pdf}
 		}
 		\caption{Diagnostics figures}
 	\end{figure*}

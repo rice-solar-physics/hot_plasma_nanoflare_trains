@@ -66,21 +66,14 @@ So what is this paper trying to say?
 Possible list of figures. Get rid of stacked plots, use grid (?) instead; maybe only one derivative plot to show how hot slope may be misleading. Get rid of slope plots also; mean cool and hot slope printed on each plot in the grid
 
 - Fig. 1: Parameter space Tikz figure
-- Fig. 2
- - a: Sample heating functions (Uniform+power-law)
- - b: ~~Distribution of event energies (plot multiple alpha on top of each other)~~
-- Fig. 3: For a given kind of heating function (i.e. alpha,beta) for a low-frequency case and a high frequency case for both ionization equilibrium and NEI. Electron heating.
- - a. T(t) for all four curves
- - b. n(t) for all four curves
- - c. ~~EM(T) for all four curves~~
-- Fig. 4: same as Fig. 3, but for ion heating
-- ~~Fig. 5: same as Fig. 3, but for single-fluid case~~ 
-- Fig. 5: Electron heating; 2x3 grid of sampling of wait times for for 3-7 different heating functions for IEQ and NEI; minimum of 6, maximum of 14 curves per panel--choose only one alpha...
+- Fig. 2 Sample heating functions (Uniform+power-law)
+- Fig. 3: EM(T), six panels showing sample values of tn, with each panel showing power-law, uniform, scaled cases, for both IEQ and NEI. Choose only one value of alpha (probably 2.5)
+- Fig. 4: same as Fig. 3, but for electron 
+- Fig. 5: same as Fig. 3, but for ion heating
+- Fig. 6: Sample q(t), T(t), n(t) profiles (three panels) for a given tn and a single run
 - Fig. 6: same as Fig. 5 but for ion heating
-- ~~Fig. 7: same as Fig. 5, but for single-fluid case~~
- - a: EM distribution for all t<sub>N</sub> with fit lines
- - b: ~~EM slopes for varying t<sub>N</sub>~~
+- Fig. 7: Two panels: left, EM slope (hot and cool) as a function of fit bounds; right, fit lines overlaid on EM(T); use a sample EM(T) for a given high tn and a random run.
  - c: EM derivatives for all t<sub>N</sub>
-- Fig. 8 ~~Cool EM slope histograms~~ EM Ratios here I guess...
-- Fig. 9 ~~Hot EM slope histograms~~
+- Fig. 8 EM ratio histograms, by heating function
+- Fig. 9 EM ratio histograms, by tn
 
