@@ -8,7 +8,8 @@ Aschwanden, M.~J., Boerner, P., Caspi, A., {et~al.} 2015, Solar Physics, 290,
 
 \bibitem[{Barnes {et~al.}(2016)Barnes, Cargill, \&
   Bradshaw}]{barnes_inference_2016}
-Barnes, W.~T., Cargill, P.~J., \& Bradshaw, S.~J. 2016, submitted
+Barnes, W.~T., Cargill, P.~J., \& Bradshaw, S.~J. 2016, The Astrophysical
+  Journal, in press
 
 \bibitem[{Bradshaw(2009)}]{bradshaw_numerical_2009}
 Bradshaw, S.~J. 2009, Astronomy and Astrophysics, 502, 409
@@ -28,6 +29,9 @@ Bradshaw, S.~J., Klimchuk, J.~A., \& Reep, J.~W. 2012, The Astrophysical
   Rabin}]{brosius_pervasive_2014}
 Brosius, J.~W., Daw, A.~N., \& Rabin, D.~M. 2014, The Astrophysical Journal,
   790, 112
+
+\bibitem[{Cargill(2013)}]{cargill_solar_2013}
+Cargill, P. 2013, Nature, 493, 485
 
 \bibitem[{Cargill(1994)}]{cargill_implications_1994}
 Cargill, P.~J. 1994, The Astrophysical Journal, 422, 381
@@ -69,6 +73,11 @@ Del~Zanna, G., Tripathi, D., Mason, H., Subramanian, S., \& O'Dwyer, B. 2015,
 Freedman, D., \& Diaconis, P. 1981, Zeitschrift für Wahrscheinlichkeitstheorie
   und Verwandte Gebiete, 57, 453
 
+\bibitem[{Guennou {et~al.}(2013)Guennou, Auchère, Klimchuk, Bocchialini, \&
+  Parenti}]{guennou_can_2013}
+Guennou, C., Auchère, F., Klimchuk, J.~A., Bocchialini, K., \& Parenti, S.
+  2013, The Astrophysical Journal, 774, 31
+
 \bibitem[{Hunter(2007)}]{hunter_matplotlib:_2007}
 Hunter, J.~D. 2007, Computing in Science \& Engineering, 9, 90
 
@@ -83,6 +92,12 @@ Klimchuk, J.~A. 2006, Solar Physics, 234, 41
 Klimchuk, J.~A., Patsourakos, S., \& Cargill, P.~J. 2008, The Astrophysical
   Journal, 682, 1351
 
+\bibitem[{Kosugi {et~al.}(2007)Kosugi, Matsuzaki, Sakao, Shimizu, Sone,
+  Tachikawa, Hashimoto, Minesugi, Ohnishi, Yamada, Tsuneta, Hara, Ichimoto,
+  Suematsu, Shimojo, Watanabe, Shimada, Davis, Hill, Owens, Title, Culhane,
+  Harra, Doschek, \& Golub}]{kosugi_hinode_2007}
+Kosugi, T., Matsuzaki, K., Sakao, T., {et~al.} 2007, Solar Physics, 243, 3
+
 \bibitem[{Landi {et~al.}(2012)Landi, Reale, \& Testa}]{landi_monte_2012}
 Landi, E., Reale, F., \& Testa, P. 2012, Astronomy and Astrophysics, 538, A111
 
@@ -90,6 +105,11 @@ Landi, E., Reale, F., \& Testa, P. 2012, Astronomy and Astrophysics, 538, A111
   Sylwester, Kowalinski, Podgorski, \& Gryciuk}]{miceli_x-ray_2012}
 Miceli, M., Reale, F., Gburek, S., {et~al.} 2012, Astronomy and Astrophysics,
   544, A139
+
+\bibitem[{Mulu-Moore {et~al.}(2011)Mulu-Moore, Winebarger, \&
+  Warren}]{mulu-moore_can_2011}
+Mulu-Moore, F.~M., Winebarger, A.~R., \& Warren, H.~P. 2011, The Astrophysical
+  Journal Letters, 742, L6
 
 \bibitem[{Parker(1988)}]{parker_nanoflares_1988}
 Parker, E.~N. 1988, The Astrophysical Journal, 330, 474
