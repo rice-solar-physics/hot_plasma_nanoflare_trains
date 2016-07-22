@@ -169,6 +169,9 @@ Ugarte-Urra, I., \& Warren, H.~P. 2014, The Astrophysical Journal, 783, 12
 van~der Walt, S., Colbert, S.~C., \& Varoquaux, G. 2011, Computing in Science
   \& Engineering, 13, 22
 
+\bibitem[{Viall \& Klimchuk(2011)}]{viall_patterns_2011}
+Viall, N.~M., \& Klimchuk, J.~A. 2011, The Astrophysical Journal, 738, 24
+
 \bibitem[{Warren {et~al.}(2011)Warren, Brooks, \&
   Winebarger}]{warren_constraints_2011}
 Warren, H.~P., Brooks, D.~H., \& Winebarger, A.~R. 2011, The Astrophysical
@@ -178,6 +181,13 @@ Warren, H.~P., Brooks, D.~H., \& Winebarger, A.~R. 2011, The Astrophysical
   Brooks}]{warren_systematic_2012}
 Warren, H.~P., Winebarger, A.~R., \& Brooks, D.~H. 2012, The Astrophysical
   Journal, 759, 141
+
+\bibitem[{Waskom {et~al.}(2016)Waskom, Botvinnik, {drewokane}, Hobson,
+  Halchenko, Lukauskas, Warmenhoven, Cole, Hoyer, Vanderplas, {gkunter},
+  Villalba, Quintero, Martin, Miles, Meyer, Augspurger, Yarkoni, Bachant,
+  Evans, Fitzgerald, Nagy, Ziegler, Megies, Wehner, St-Jean, Coelho, Hitz, Lee,
+  \& Rocher}]{waskom_seaborn:_2016}
+Waskom, M., Botvinnik, O., {drewokane}, {et~al.} 2016, doi:10.5281/zenodo.45133
 
 \bibitem[{Winebarger {et~al.}(2011)Winebarger, Schmelz, Warren, Saar, \&
   Kashyap}]{winebarger_using_2011}
