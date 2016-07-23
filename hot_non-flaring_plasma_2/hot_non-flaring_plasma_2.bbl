@@ -1,6 +1,9 @@
 \begin{thebibliography}{}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
+\bibitem[{Antiochos \& Sturrock(1978)}]{antiochos_evaporative_1978}
+Antiochos, S.~K., \& Sturrock, P.~A. 1978, The Astrophysical Journal, 220, 1137
+
 \bibitem[{Aschwanden {et~al.}(2015)Aschwanden, Boerner, Caspi, McTiernan, Ryan,
   \& Warren}]{aschwanden_benchmark_2015}
 Aschwanden, M.~J., Boerner, P., Caspi, A., {et~al.} 2015, Solar Physics, 290,
@@ -135,6 +138,11 @@ Reale, F., Testa, P., Klimchuk, J.~A., \& Parenti, S. 2009, The Astrophysical
 Reep, J.~W., Bradshaw, S.~J., \& Klimchuk, J.~A. 2013, The Astrophysical
   Journal, 764, 193
 
+\bibitem[{Scargle {et~al.}(2013)Scargle, Norris, Jackson, \&
+  Chiang}]{scargle_studies_2013}
+Scargle, J.~D., Norris, J.~P., Jackson, B., \& Chiang, J. 2013, The
+  Astrophysical Journal, 764, 167
+
 \bibitem[{Schmelz {et~al.}(2015)Schmelz, Asgari-Targhi, Christian, Dhaliwal, \&
   Pathak}]{schmelz_hot_2015}
 Schmelz, J.~T., Asgari-Targhi, M., Christian, G.~M., Dhaliwal, R.~S., \&
@@ -168,6 +176,11 @@ Ugarte-Urra, I., \& Warren, H.~P. 2014, The Astrophysical Journal, 783, 12
   Varoquaux}]{van_der_walt_numpy_2011}
 van~der Walt, S., Colbert, S.~C., \& Varoquaux, G. 2011, Computing in Science
   \& Engineering, 13, 22
+
+\bibitem[{VanderPlas {et~al.}(2012)VanderPlas, Connolly, Ivezic, \&
+  Gray}]{vanderplas_introduction_2012}
+VanderPlas, J., Connolly, A., Ivezic, Z., \& Gray, A. 2012, in 2012
+  {Conference} on {Intelligent} {Data} {Understanding} ({CIDU}), 47--54
 
 \bibitem[{Viall \& Klimchuk(2011)}]{viall_patterns_2011}
 Viall, N.~M., \& Klimchuk, J.~A. 2011, The Astrophysical Journal, 738, 24
