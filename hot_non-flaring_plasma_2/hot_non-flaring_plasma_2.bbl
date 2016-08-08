@@ -54,6 +54,9 @@ Cargill, P.~J., Bradshaw, S.~J., \& Klimchuk, J.~A. 2012{\natexlab{a}}, The
 \bibitem[{Cargill \& Klimchuk(2004)}]{cargill_nanoflare_2004}
 Cargill, P.~J., \& Klimchuk, J.~A. 2004, The Astrophysical Journal, 605, 911
 
+\bibitem[{Cargill \& Klimchuk(2006)}]{cargill_temperature-emission_2006}
+---. 2006, The Astrophysical Journal, 643, 438
+
 \bibitem[{Cargill {et~al.}(2015)Cargill, Warren, \&
   Bradshaw}]{cargill_modelling_2015}
 Cargill, P.~J., Warren, H.~P., \& Bradshaw, S.~J. 2015, Philosophical
@@ -63,6 +66,15 @@ Cargill, P.~J., Warren, H.~P., \& Bradshaw, S.~J. 2015, Philosophical
   Kobayashi, Moore, Walsh, Korreck, Weber, McCauley, Title, Kuzin, \&
   DeForest}]{cirtain_energy_2013}
 Cirtain, J.~W., Golub, L., Winebarger, A.~R., {et~al.} 2013, Nature, 493, 501
+
+\bibitem[{Culhane {et~al.}(2007)Culhane, Harra, James, Al-Janabi, Bradley,
+  Chaudry, Rees, Tandy, Thomas, Whillock, Winter, Doschek, Korendyke, Brown,
+  Myers, Mariska, Seely, Lang, Kent, Shaughnessy, Young, Simnett, Castelli,
+  Mahmoud, Mapson-Menard, Probyn, Thomas, Davila, Dere, Windt, Shea, Hagood,
+  Moye, Hara, Watanabe, Matsuzaki, Kosugi, Hansteen, \&
+  Wikstol}]{culhane_euv_2007}
+Culhane, J.~L., Harra, L.~K., James, A.~M., {et~al.} 2007, Solar Physics, 243,
+  19
 
 \bibitem[{Del~Zanna \& Mason(2014)}]{del_zanna_elemental_2014}
 Del~Zanna, G., \& Mason, H.~E. 2014, Astronomy and Astrophysics, 565, A14
@@ -117,6 +129,11 @@ Mulu-Moore, F.~M., Winebarger, A.~R., \& Warren, H.~P. 2011, The Astrophysical
 \bibitem[{Parker(1988)}]{parker_nanoflares_1988}
 Parker, E.~N. 1988, The Astrophysical Journal, 330, 474
 
+\bibitem[{Pesnell {et~al.}(2012)Pesnell, Thompson, \&
+  Chamberlin}]{pesnell_solar_2012}
+Pesnell, W.~D., Thompson, B.~J., \& Chamberlin, P.~C. 2012, Solar Physics, 275,
+  3
+
 \bibitem[{Petralia {et~al.}(2014)Petralia, Reale, Testa, \&
   Del~Zanna}]{petralia_thermal_2014}
 Petralia, A., Reale, F., Testa, P., \& Del~Zanna, G. 2014, Astronomy and
@@ -137,6 +154,11 @@ Reale, F., Testa, P., Klimchuk, J.~A., \& Parenti, S. 2009, The Astrophysical
   Klimchuk}]{reep_diagnosing_2013}
 Reep, J.~W., Bradshaw, S.~J., \& Klimchuk, J.~A. 2013, The Astrophysical
   Journal, 764, 193
+
+\bibitem[{Sanz-Forcada {et~al.}(2003)Sanz-Forcada, Brickhouse, \&
+  Dupree}]{sanz-forcada_structure_2003}
+Sanz-Forcada, J., Brickhouse, N.~S., \& Dupree, A.~K. 2003, The Astrophysical
+  Journal Supplement Series, 145, 147
 
 \bibitem[{Scargle {et~al.}(2013)Scargle, Norris, Jackson, \&
   Chiang}]{scargle_studies_2013}
