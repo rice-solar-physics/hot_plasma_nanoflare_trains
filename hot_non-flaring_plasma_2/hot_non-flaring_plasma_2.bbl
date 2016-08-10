@@ -107,6 +107,13 @@ Klimchuk, J.~A. 2006, Solar Physics, 234, 41
 Klimchuk, J.~A., Patsourakos, S., \& Cargill, P.~J. 2008, The Astrophysical
   Journal, 682, 1351
 
+\bibitem[{Kobayashi {et~al.}(2011)Kobayashi, Cirtain, Golub, Winebarger, Hertz,
+  Cheimets, Caldwell, Korreck, Robinson, Reardon, Kester, Griffith, \&
+  Young}]{kobayashi_marshall_2011}
+Kobayashi, K., Cirtain, J., Golub, L., {et~al.} 2011, in Society of
+  {Photo}-{Optical} {Instrumentation} {Engineers} ({SPIE}) {Conference}
+  {Series}, Vol. 8147, 81471M
+
 \bibitem[{Kosugi {et~al.}(2007)Kosugi, Matsuzaki, Sakao, Shimizu, Sone,
   Tachikawa, Hashimoto, Minesugi, Ohnishi, Yamada, Tsuneta, Hara, Ichimoto,
   Suematsu, Shimojo, Watanabe, Shimada, Davis, Hill, Owens, Title, Culhane,
@@ -223,6 +230,9 @@ Warren, H.~P., Winebarger, A.~R., \& Brooks, D.~H. 2012, The Astrophysical
   Evans, Fitzgerald, Nagy, Ziegler, Megies, Wehner, St-Jean, Coelho, Hitz, Lee,
   \& Rocher}]{waskom_seaborn:_2016}
 Waskom, M., Botvinnik, O., {drewokane}, {et~al.} 2016, doi:10.5281/zenodo.45133
+
+\bibitem[{Winebarger(2014)}]{winebarger_new_2014}
+Winebarger, A.~R. 2014, AGU Fall Meeting Abstracts, 52, 03
 
 \bibitem[{Winebarger {et~al.}(2011)Winebarger, Schmelz, Warren, Saar, \&
   Kashyap}]{winebarger_using_2011}
