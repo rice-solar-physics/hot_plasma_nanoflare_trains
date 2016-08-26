@@ -4,15 +4,10 @@
 \bibitem[{Antiochos \& Sturrock(1978)}]{antiochos_evaporative_1978}
 Antiochos, S.~K., \& Sturrock, P.~A. 1978, The Astrophysical Journal, 220, 1137
 
-\bibitem[{Aschwanden {et~al.}(2015)Aschwanden, Boerner, Caspi, McTiernan, Ryan,
-  \& Warren}]{aschwanden_benchmark_2015}
-Aschwanden, M.~J., Boerner, P., Caspi, A., {et~al.} 2015, Solar Physics, 290,
-  2733
-
 \bibitem[{Barnes {et~al.}(2016)Barnes, Cargill, \&
-  Bradshaw}]{barnes_inference_2016}
-Barnes, W.~T., Cargill, P.~J., \& Bradshaw, S.~J. 2016, The Astrophysical
-  Journal, in press
+  Bradshaw}]{barnes_inference_2016-1}
+Barnes, W.~T., Cargill, P.~J., \& Bradshaw, S.~J. 2016, ArXiv e-prints, 1608,
+  arXiv:1608.04776
 
 \bibitem[{Bradshaw(2009)}]{bradshaw_numerical_2009}
 Bradshaw, S.~J. 2009, Astronomy and Astrophysics, 502, 409
@@ -88,13 +83,31 @@ Del~Zanna, G., Tripathi, D., Mason, H., Subramanian, S., \& O'Dwyer, B. 2015,
 Freedman, D., \& Diaconis, P. 1981, Zeitschrift für Wahrscheinlichkeitstheorie
   und Verwandte Gebiete, 57, 453
 
+\bibitem[{Grefenstette {et~al.}(2016)Grefenstette, Glesener, Krucker, Hudson,
+  Hannah, Smith, Vogel, White, Madsen, Marsh, Caspi, Chen, Shih, Kuhar, Boggs,
+  Christensen, Craig, Forster, Hailey, Harrison, Miyasaka, Stern, \&
+  Zhang}]{grefenstette_first_2016}
+Grefenstette, B.~W., Glesener, L., Krucker, S., {et~al.} 2016, The
+  Astrophysical Journal, 826, 20
+
 \bibitem[{Guennou {et~al.}(2013)Guennou, Auchère, Klimchuk, Bocchialini, \&
   Parenti}]{guennou_can_2013}
 Guennou, C., Auchère, F., Klimchuk, J.~A., Bocchialini, K., \& Parenti, S.
   2013, The Astrophysical Journal, 774, 31
 
+\bibitem[{Hannah {et~al.}(2016)Hannah, Grefenstette, Smith, Glesener, Krucker,
+  Hudson, Madsen, Marsh, White, Caspi, Shih, Harrison, Stern, Boggs,
+  Christensen, Craig, Hailey, \& Zhang}]{hannah_first_2016}
+Hannah, I.~G., Grefenstette, B.~W., Smith, D.~M., {et~al.} 2016, The
+  Astrophysical Journal Letters, 820, L14
+
 \bibitem[{Hunter(2007)}]{hunter_matplotlib:_2007}
 Hunter, J.~D. 2007, Computing in Science \& Engineering, 9, 90
+
+\bibitem[{Ishikawa {et~al.}(2014)Ishikawa, Glesener, Christe, Ishibashi,
+  Brooks, Williams, Shimojo, Sako, \& Krucker}]{ishikawa_constraining_2014}
+Ishikawa, S.-n., Glesener, L., Christe, S., {et~al.} 2014, Publications of the
+  Astronomical Society of Japan, 66, S15
 
 \bibitem[{Jordan(1975)}]{jordan_structure_1975}
 Jordan, C. 1975, Solar Gamma-, X-, and EUV Radiation, 68
