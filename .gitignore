@@ -1,7 +1,8 @@
 ## Project-specific ignores
 site/output
-results/*
-!results/static/
+## Tracking figures for now; change back once we've incorporated notebooks
+#results/*
+#!results/static/
 
 ## Scons
 .sconsign.dblite
@@ -118,8 +119,9 @@ ENV/
 # these rules might exclude image files for figures etc.
 *.ps
 *.eps
-*.pdf
-# whitelist anything not built on the fly
+*.pdf 
+# whitelist anything not built on the fly (remove first entry when we add ntbks back in)
+!results/*.pdf 
 !results/static/*.pdf
 !results/static/*.ps
 !results/static/*.eps
