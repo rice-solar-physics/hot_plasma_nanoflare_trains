@@ -81,3 +81,4 @@ The main influences for this small project are:
 * [Reproducible, One Button Workflows with the Jupyter Notebook & Scons | SciPy 2016 | Jessica Hamrick](https://www.youtube.com/watch?v=Fc2W930NJs8)
 * [In Defense of Extreme Openness | Python in Astronomy 2016 | Jake VanderPlas](https://speakerdeck.com/jakevdp/in-defense-of-extreme-openness)
 * [ewanmellor/gh-publisher | Configure an automated build and publish process with Travis CI and GitHub Pages](https://github.com/ewanmellor/gh-publisher)
+
