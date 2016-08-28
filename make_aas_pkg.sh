@@ -26,9 +26,14 @@ cp $PATH2FILES"tex/paper."{"tex","bbl"} $DEST
 #Load figure manifest
 fig_array=(`cat $PATH2FILES"FIG_MANIFEST"`)
 array_len=${#fig_array[@]}
-for i in `seq 0 $((array_len-1))`
+for i in `seq 0 2 $((array_len-1))`
 do
-	cp $PATH2FILES"results/"${fig_array[$((i))]} $DEST
+	OLD_FIG=${fig_array[$((i))]}
+	NEW_FIG=${fig_array[$((i+1))]}
+	#copy the file over
+	cp $PATH2FILES"results/"$OLD_FIG $DEST$NEW_FIG
+	#replace the name
+	sed -i '' "s%${OLD_FIG}%${NEW_FIG}%g" $DEST"paper.tex"
 done
 
 #copy tikz graphics to right spot

@@ -1,12 +1,12 @@
-em_grid_electron_a25.pdf
-em_grid_ion_a25.pdf
-em_grid_single_a25.pdf
-em_slope_varying_bounds.pdf
-heating_functions.pdf
-nT_sample_curves_tn2500_electron.pdf
-ratio_hist_alpha_electron_T1.pdf
-ratio_hist_alpha_ion_T1.pdf
-ratio_hist_alpha_single_T1.pdf
-ratio_hist_twait_electron_T1.pdf
-ratio_hist_twait_ion_T1.pdf
-ratio_hist_twait_single_T1.pdf
+em_grid_electron_a25.pdf				fig4.pdf
+em_grid_ion_a25.pdf						fig5.pdf
+em_grid_single_a25.pdf					fig3.pdf
+em_slope_varying_bounds.pdf				fig7.pdf
+heating_functions.pdf					fig1.pdf
+nT_sample_curves_tn2500_electron.pdf	fig6.pdf
+ratio_hist_alpha_electron_T1.pdf		fig9a.pdf
+ratio_hist_alpha_ion_T1.pdf				fig10a.pdf
+ratio_hist_alpha_single_T1.pdf			fig8a.pdf
+ratio_hist_twait_electron_T1.pdf		fig9b.pdf
+ratio_hist_twait_ion_T1.pdf				fig10b.pdf
+ratio_hist_twait_single_T1.pdf			fig8b.pdf
