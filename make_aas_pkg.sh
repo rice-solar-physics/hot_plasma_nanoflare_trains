@@ -21,7 +21,7 @@ PATH2FILES=$(cd `dirname $0` && pwd)"/"
 #Copy needed TeX files
 cp $PATH2FILES"tex/paper."{"tex","bbl"} $DEST
 #cp $PATH2FILES"tex/aasjournal.bst" $DEST
-#cp $PATH2FILES"tex/aastex.cls" $DEST
+cp $PATH2FILES"tex/aastex.cls" $DEST
 
 #Load figure manifest
 fig_array=(`cat $PATH2FILES"FIG_MANIFEST"`)
