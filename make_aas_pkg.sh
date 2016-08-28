@@ -11,7 +11,7 @@ fi
 #Clean up
 if [ "$2" == "clean" ]; then
 	echo "Cleaning up archive and directory at "$DEST
-	rm $1"aas_pkg.tar.gz"
+	rm $1"aas_pkg.tar.gz" && rm -r $DEST
 	exit 0
 fi
 
