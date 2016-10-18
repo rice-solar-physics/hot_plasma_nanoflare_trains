@@ -46,6 +46,12 @@ sed -i '' "s%${OLD_PATH}%${NEW_PATH}%g" $DEST"paper.tex"
 OLD_PATH='../results/'
 sed -i '' "s%${OLD_PATH}%${NEW_PATH}%g" $DEST"paper.tex"
 
+#Add a cover letter PDF if it exists (requires pandoc)
+if [-f $PATH2FILES"COVER_LETTER.md"];
+then
+	pandoc $PATH2FILES"COVER_LETTER.md" --latex-engine=xelatex -V geometry:margin=1in -o $DEST"COVER_LETTER.pdf"
+fi
+
 #Tar the file
 CURDIR=`pwd`
 cd $1
